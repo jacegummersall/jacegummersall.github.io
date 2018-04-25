@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower|Nanum+Gothic");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-family: 'Nanum Gothic', sans-serif; }
+
+.header {
+  display: flex;
+  flex-flow: wrap;
+  background: url("images/landing-page-bkgrd.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+  color: black;
+  height: 700px;
+  width: 100%; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none; }
+    nav ul a {
+      padding: 5%;
+      border: solid 2px black; }
+
+.logo {
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-top-color: white;
+  border-bottom-color: black;
+  position: relative;
+  top: -50px;
+  z-index: 0; }
+  .logo:before {
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: 50px;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top-color: black;
+    z-index: -1; }
+
+.letter {
+  font-size: 2.5em;
+  color: white;
+  z-index: 100;
+  font-family: 'Indie Flower', cursive; }
+
+.j {
+  position: absolute;
+  left: -50px;
+  top: 50px; }
+
+.g {
+  position: absolute;
+  left: -50px;
+  top: 50px; }
+
+/*# sourceMappingURL=style.css.map */
