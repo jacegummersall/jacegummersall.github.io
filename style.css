@@ -23,14 +23,18 @@ html {
 nav {
   display: flex;
   justify-content: space-between;
-  width: 100%; }
+  align-items: center;
+  width: 100%;
+  height: 5%; }
   nav ul {
     display: flex;
     justify-content: space-around;
     list-style-type: none; }
     nav ul a {
       padding: 5%;
-      border: solid 2px black; }
+      text-decoration: none;
+      width: 100px;
+      color: white; }
 
 .logo {
   width: 0;
@@ -39,7 +43,7 @@ nav {
   border-top-color: white;
   border-bottom-color: black;
   position: relative;
-  top: -50px;
+  top: -50%;
   z-index: 0; }
   .logo:before {
     content: '';
@@ -60,12 +64,42 @@ nav {
 
 .j {
   position: absolute;
-  left: -50px;
-  top: 50px; }
+  left: -22px;
+  top: 23px; }
 
 .g {
   position: absolute;
-  left: -50px;
-  top: 50px; }
+  left: -2px;
+  top: 20px; }
+
+.var-highlight {
+  color: #C0AD60; }
+
+.string-highlight {
+  color: rgba(253, 149, 90, 0.8); }
+
+#typewriter {
+  font-size: 2em;
+  margin: 0;
+  font-family: "Courier New"; }
+  #typewriter:after {
+    content: "|";
+    animation: blink 500ms linear infinite alternate; }
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-moz-keyframes blink {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes blink {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 /*# sourceMappingURL=style.css.map */
