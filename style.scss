@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Nanum+Gothic');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Nanum+Gothic|Open+Sans+Condensed:300');
 
 * { margin:0; padding:0; box-sizing:border-box; }
 
@@ -80,36 +80,39 @@ nav {
 	top: 20px;
 }
 
-//TYPEWRITER
- .var-highlight{
-    color: #C0AD60;
-}
-.string-highlight{
-    color: rgba(253, 149, 90, 0.8);
-}
-
-#typewriter{
-        font-size: 2em;
-        margin: 0;
-        font-family: "Courier New";
-
-        &:after{
-            content: "|";
-            animation: blink 500ms linear infinite alternate;
-        }
-}
-
-@-webkit-keyframes blink{
-    0%{opacity: 0;}
-    100%{opacity: 1;}
-}
-
-@-moz-keyframes blink{
-    0%{opacity: 0;}
-    100%{opacity: 1;}
+.name {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	align-self: flex-start;
+	margin-top: -10%;
+	h3{
+		display: flex;
+		justify-content: center;
+		width:100%;
+		align-self: flex-end;
+		font-size: 2em;
+	}
+	h1{
+		display: flex;
+		justify-content: center;
+		width:100%;
+		align-self: flex-start;
+		font-size: 6em;
+		font-family: 'Open Sans Condensed', sans-serif;
+	}
 }
 
-@keyframes blink{
-    0%{opacity: 0;}
-    100%{opacity: 1;}
+h1 {
+	span{
+		border-right: .05em solid black;
+		animation: caret 1s steps(1) infinite;
+	}	
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
 }
