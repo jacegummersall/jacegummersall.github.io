@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Indie+Flower|Nanum+Gothic|Open+Sans+Condensed:300");
+@keyframes caret {
+  50% {
+    border-color: transparent; } }
 * {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+  padding: 0; }
 
 html {
   font-family: 'Nanum Gothic', sans-serif; }
@@ -17,7 +19,7 @@ html {
   background-size: cover;
   overflow: hidden;
   color: black;
-  height: 700px;
+  height: 800px;
   width: 100%; }
 
 nav {
@@ -97,8 +99,49 @@ h1 span {
   border-right: .05em solid black;
   animation: caret 1s steps(1) infinite; }
 
-@keyframes caret {
-  50% {
-    border-color: transparent; } }
+.body {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  width: 100%; }
+  .body section {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin: 1% 0 .25% 0;
+    width: 100%; }
+    .body section h2 {
+      align-self: center; }
+    .body section .languages {
+      display: flex;
+      flex-flow: row nowrap;
+      width: 100%;
+      margin: .5% 0 0 0; }
+      .body section .languages ul {
+        list-style-type: none;
+        width: 15%;
+        text-align: center; }
+    .body section .content {
+      width: 60%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-self: center; }
+  .body .even {
+    background-color: #ececec; }
+
+.image {
+  height: 200px;
+  width: 250px;
+  border-radius: 25px;
+  margin-right: 3%;
+  align-self: center; }
+
+.self-portrait {
+  height: 326.4px;
+  width: 244.8px;
+  border-radius: 50%;
+  margin-right: 3%;
+  align-self: center; }
 
 /*# sourceMappingURL=style.css.map */
