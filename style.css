@@ -121,6 +121,8 @@ h1 span {
     .body section a {
       text-decoration: none;
       color: #2a9995; }
+    .body section ul {
+      list-style-type: none; }
     .body section .languages {
       display: flex;
       flex-flow: row nowrap;
@@ -136,6 +138,8 @@ h1 span {
       flex-flow: row nowrap;
       justify-content: space-between;
       align-self: center; }
+      .body section .content p {
+        align-self: center; }
   .body .even {
     background-color: white;
     box-shadow: 0 0 5px 10px white; }
@@ -144,6 +148,10 @@ h1 span {
     box-shadow: 0 0 5px 10px #ece8e2; }
     .body .odd .content .description {
       margin-right: 3%; }
+  .body .icons {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around; }
 
 .image {
   height: 200px;
@@ -158,5 +166,9 @@ h1 span {
   border-radius: 50%;
   margin-right: 3%;
   align-self: center; }
+
+.icon {
+  height: 100px;
+  width: 100px; }
 
 /*# sourceMappingURL=style.css.map */

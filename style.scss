@@ -149,6 +149,9 @@ h1 {
 			text-decoration: none;
 			color: $h5-color;
 		}
+		ul {
+			list-style-type: none;
+		}
 		.languages {
 			display: flex;
 			flex-flow: row nowrap;
@@ -166,6 +169,9 @@ h1 {
 			flex-flow: row nowrap;
 			justify-content: space-between;
 			align-self: center;
+			p{
+				align-self: center;
+			}
 		}
 	}
 	.even{
@@ -180,6 +186,11 @@ h1 {
 				margin-right: 3%;
 			}
 		}
+	}
+	.icons{
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-around;
 	}
 }
 
@@ -197,5 +208,10 @@ h1 {
 	border-radius: 50%;
 	margin-right: 3%;
 	align-self: center;
+}
+
+.icon{
+	height:100px;
+	width:100px;
 }
 
