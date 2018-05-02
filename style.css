@@ -118,11 +118,9 @@ h1 span {
       color: #e14658; }
     .body section h5 {
       color: #2a9995; }
-    .body section ul {
-      list-style-type: none; }
-      .body section ul a {
-        text-decoration: none;
-        color: #2a9995; }
+    .body section a {
+      text-decoration: none;
+      color: #2a9995; }
     .body section .languages {
       display: flex;
       flex-flow: row nowrap;
