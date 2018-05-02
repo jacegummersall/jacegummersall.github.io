@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower|Nanum+Gothic|Open+Sans+Condensed:300');
+@import 'partials/colors';
+
 
 //KEYFRAMES
 @keyframes caret {
@@ -18,14 +20,14 @@ html{
 .header {
 	display: flex;
 	flex-flow: wrap;
-	background: url("images/landing-page-bkgrd.jpg") no-repeat center center fixed;
+	background: url("images/landing-page-bkgrd-o.jpg") no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
   	overflow: hidden;
-    color: black;
-    height: 800px;
+    color: $dark-font;
+    height: 750px;
     width: 100%;
 }
 
@@ -43,7 +45,7 @@ nav {
 			padding: 5%;
 			text-decoration: none;
 			width: 100px;
-			color: white;
+			color: $light-font;
 		}
 	}
 }
@@ -53,7 +55,7 @@ nav {
 	height: 0;
 	border: 50px solid transparent;
 	border-top-color: white;
-	border-bottom-color: black;
+	border-bottom-color: $dark-font;
 	position: relative;
 	top: -50%;
 	z-index: 0;
@@ -65,14 +67,14 @@ nav {
 		width: 0;
 		height: 0;
 		border: 50px solid transparent;
-		border-top-color: black;
+		border-top-color: $dark-font;
 		z-index: -1;
 	}
 }
 
 .letter {
 	font-size: 2.5em;
-	color: white;
+	color: $light-font;
 	z-index:100;
 	font-family: 'Indie Flower', cursive;
 }
@@ -115,7 +117,7 @@ nav {
 
 h1 {
 	span{
-		border-right: .05em solid black;
+		border-right: .05em solid $dark-font;
 		animation: caret 1s steps(1) infinite;
 	}	
 }
@@ -129,16 +131,32 @@ h1 {
 		display: flex;
 		flex-flow: column wrap;
 		justify-content: center;
-		margin: 1% 0 0 0;
+		padding: 1% 0 1% 0;
 		width: 100%;
 		h2{
 			align-self: center;
+		}
+		h3{
+			color: $h3-color;
+		}
+		h4{
+			color: $h4-color;
+		}
+		h5{
+			color: $h5-color;
+		}
+		ul {
+			list-style-type: none;
+			a{
+				text-decoration: none;
+				color: $h5-color;
+			}
 		}
 		.languages {
 			display: flex;
 			flex-flow: row nowrap;
 			width: 100%;
-			margin: .5% 0 0 0;
+			padding: .5% 0 0 0;
 			ul{
 				list-style-type: none;
 				width: 15%;
@@ -153,14 +171,24 @@ h1 {
 			align-self: center;
 		}
 	}
-	.even {
-		background-color: #ececec;
+	.even{
+		background-color: $background-1;
+		box-shadow: 0 0 5px 10px $background-1;
+	}
+	.odd{
+		background-color: $background-2;
+		box-shadow: 0 0 5px 10px $background-2;
+		.content{
+			.description{
+				margin-right: 3%;
+			}
+		}
 	}
 }
 
 .image{
 	height: 200px;
-	width: 250px;
+	width: 300px;
 	border-radius: 25px;
 	margin-right: 3%;
 	align-self: center;

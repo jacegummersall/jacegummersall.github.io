@@ -12,14 +12,14 @@ html {
 .header {
   display: flex;
   flex-flow: wrap;
-  background: url("images/landing-page-bkgrd.jpg") no-repeat center center fixed;
+  background: url("images/landing-page-bkgrd-o.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   overflow: hidden;
-  color: black;
-  height: 800px;
+  color: #22252c;
+  height: 750px;
   width: 100%; }
 
 nav {
@@ -43,7 +43,7 @@ nav {
   height: 0;
   border: 50px solid transparent;
   border-top-color: white;
-  border-bottom-color: black;
+  border-bottom-color: #22252c;
   position: relative;
   top: -50%;
   z-index: 0; }
@@ -55,7 +55,7 @@ nav {
     width: 0;
     height: 0;
     border: 50px solid transparent;
-    border-top-color: black;
+    border-top-color: #22252c;
     z-index: -1; }
 
 .letter {
@@ -96,7 +96,7 @@ nav {
     font-family: 'Open Sans Condensed', sans-serif; }
 
 h1 span {
-  border-right: .05em solid black;
+  border-right: 0.05em solid #22252c;
   animation: caret 1s steps(1) infinite; }
 
 .body {
@@ -108,15 +108,26 @@ h1 span {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    margin: 1% 0 .25% 0;
+    padding: 1% 0 1% 0;
     width: 100%; }
     .body section h2 {
       align-self: center; }
+    .body section h3 {
+      color: #3f3250; }
+    .body section h4 {
+      color: #e14658; }
+    .body section h5 {
+      color: #2a9995; }
+    .body section ul {
+      list-style-type: none; }
+      .body section ul a {
+        text-decoration: none;
+        color: #2a9995; }
     .body section .languages {
       display: flex;
       flex-flow: row nowrap;
       width: 100%;
-      margin: .5% 0 0 0; }
+      padding: .5% 0 0 0; }
       .body section .languages ul {
         list-style-type: none;
         width: 15%;
@@ -128,11 +139,17 @@ h1 span {
       justify-content: space-between;
       align-self: center; }
   .body .even {
-    background-color: #ececec; }
+    background-color: white;
+    box-shadow: 0 0 5px 10px white; }
+  .body .odd {
+    background-color: #ece8e2;
+    box-shadow: 0 0 5px 10px #ece8e2; }
+    .body .odd .content .description {
+      margin-right: 3%; }
 
 .image {
   height: 200px;
-  width: 250px;
+  width: 300px;
   border-radius: 25px;
   margin-right: 3%;
   align-self: center; }
