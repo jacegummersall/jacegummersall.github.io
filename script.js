@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded',function(event){
 
-    var words = ["Welcome, I'm", "Jace Gummersall"];
+    var words = ["Welcome, I am", "Jace Gummersall"];
 
     function typeWriter(text, i, fnCallback) {
 
         if (i < (text.length)) {
-            if(text == "Welcome, I'm"){
+            if(text == words[0]){
                 document.getElementById("type-intro1").innerHTML = text.substring(0, i+1) +'<span id="letter" aria-hidden="true"></span>';
                 document.getElementById("letter").style.borderRight = ".05em solid #000000";
                 if (text[i] == ","){
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded',function(event){
                     }, 100);
                 }
             }
-            else if (text == "Jace Gummersall"){
+            else if (text == words[1]){
                 document.getElementById("type-intro2").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
                 setTimeout(function() {
                     typeWriter(text, i + 1, fnCallback)
@@ -30,6 +30,13 @@ document.addEventListener('DOMContentLoaded',function(event){
         else if (typeof fnCallback == 'function') {
             document.getElementById("letter").style.borderRight = "";
             setTimeout(fnCallback, 700);
+        }        
+        if (i == words[words.length-1].length){
+            setTimeout(function() {
+                document.getElementById("type-intro1").innerHTML = "";
+                document.getElementById("type-intro2").innerHTML = "";    
+            }, 19900);
+            
         }
     }
 
