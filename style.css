@@ -226,15 +226,6 @@ html {
     width: 75px; } }
 /* tablets and desktop */
 @media only screen and (min-width: 1024px) {
-  .body section .languages {
-    display: flex;
-    flex-flow: row nowrap;
-    width: 100%;
-    padding: .5% 0 0 0; }
-    .body section .languages ul {
-      list-style-type: none;
-      width: 15%;
-      text-align: center; }
   .body section .content {
     width: 60%;
     display: flex;
@@ -243,6 +234,20 @@ html {
     align-self: center; }
     .body section .content p {
       align-self: center; }
+  .body section .languages {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: start;
+    width: 100%;
+    padding: .5% 0 0 0; }
+    .body section .languages ul {
+      list-style-type: none;
+      width: 25%;
+      align-self: start; }
+      .body section .languages ul h3 {
+        text-align: center; }
+      .body section .languages ul li {
+        text-align: center; }
   .body .even .content {
     flex-flow: row; }
   .body .icons {
