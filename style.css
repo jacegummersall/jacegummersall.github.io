@@ -226,6 +226,9 @@ html {
     width: 75px; } }
 /* tablets and desktop */
 @media only screen and (min-width: 1024px) {
+  .name {
+    margin-top: -10%; }
+
   .body section .content {
     width: 60%;
     display: flex;
