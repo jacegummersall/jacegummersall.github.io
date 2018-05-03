@@ -298,17 +298,6 @@ html{
 
 	.body{
 		section{
-			.languages {
-				display: flex;
-				flex-flow: row nowrap;
-				width: 100%;
-				padding: .5% 0 0 0;
-				ul{
-					list-style-type: none;
-					width: 15%;
-					text-align: center;
-				}
-			}
 			.content{
 				width: 60%;
 				display: flex;
@@ -319,7 +308,24 @@ html{
 					align-self: center;
 				}				
 			}
-
+			.languages {
+				display: flex;
+				flex-flow: row nowrap;
+				align-items: start;
+				width: 100%;
+				padding: .5% 0 0 0;
+				ul{
+					list-style-type: none;
+					width: 25%;
+					align-self: start;
+					h3{
+						text-align: center;
+					}
+					li {
+						text-align: center;
+					}
+				}
+			}
 		}
 		.even{
 			.content{
@@ -344,4 +350,3 @@ html{
 	}
 
 }
-
