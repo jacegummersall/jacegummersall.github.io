@@ -14,7 +14,7 @@ html {
   .header {
     display: flex;
     flex-flow: wrap;
-    background: url("images/landing-page-bkgrd-o.jpg") no-repeat center center fixed;
+    background: url("images/landing-page-bkgrd-phone.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -166,6 +166,19 @@ html {
     height: 50px;
     width: 50px; } }
 @media only screen and (min-width: 425px) {
+  .header {
+    display: flex;
+    flex-flow: wrap;
+    background: url("images/landing-page-bkgrd-o.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+    color: #22252c;
+    height: 600px;
+    width: 100%; }
+
   .name {
     margin-top: -10%; }
 
