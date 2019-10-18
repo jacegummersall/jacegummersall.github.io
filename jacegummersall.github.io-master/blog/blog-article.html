@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125906225-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-125906225-1');
+  </script>
+  <meta charset="utf-8">
+  <title>Jace Gummersall - Blog</title>
+  <link rel="stylesheet" media="screen" href="blog-style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Jace Gummersall">
+  <meta name="google-site-verification" content="Mi8U5Nx4S--OkmTY-m9M7Gzi8zKhhbWRqNb7c4fH4v0" />
+  <link rel="shortcut icon" href="images/favicon.ico"/>
+</head>
+<body onload="displayArticle()">
+
+<div class="topnav">
+  <a href="blog-home.html">Home</a>
+</div>
+
+<div class="header">
+<h2 id="title"></h2>
+<h6 id="subtitle"></h6>
+</div>
+
+<div class="article-body">
+    <p id="body"></p>
+</div>
+
+
+<!-- <div class="footer">
+<h2>Footer</h2>
+</div> -->
+<!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-database.js"></script>
+
+  <script type="text/javascript" src="blog-script.js"></script>
+</body>
+</html>
